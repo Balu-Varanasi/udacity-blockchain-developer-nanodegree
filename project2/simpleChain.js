@@ -117,13 +117,18 @@ class BlockChain {
    */
   async validateChain() {
     let errorLog = [];
+    let previousHash = '';
 
     const height = await this.getBlockHeight();
-
     for (let i = 0; i < height + 1; i++) {
-      if (!await this.validateBlock(i)) {
-        errorLog.push(i);
+      let block = await this.getBlock(i);
+      if (!this.validateBlock(block.height)) {
+        errorLog.push(i)
       }
+      if (block.previousBlockHash !== previousHash) {
+        errorLog.push(i)
+      }
+      previousHash = block.hash
     }
     if (errorLog.length > 0) {
       console.log(`Block errors = ${errorLog.length}`);
