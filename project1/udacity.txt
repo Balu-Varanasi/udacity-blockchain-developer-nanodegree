@@ -1,0 +1,3 @@
+Wallet address: 14TwaGf3yy8F2E99f2kWmU34n2PmdrV7tR
+Message: 14TwaGf3yy8F2E99f2kWmU34n2PmdrV7tR: Udacity rocks!
+Signature: IGanvyNcz7DZO2UIMq1xdb5ex2zwMRuG8AIBz8n9jHBSOH6ekDIg3jK6vtlm7tlQwUCfYl7cpGLTOtBOTZFBlbU=
