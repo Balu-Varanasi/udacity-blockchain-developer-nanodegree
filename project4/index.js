@@ -143,7 +143,7 @@ app.post('/block', [validateNewStarRequest], async (req, res) => {
 
 app.get('/block/:height', async (req, res) => {
   try {
-    const response = await chain.getBlock(req.params.height);
+    const response = await chain.getBlockByHeight(req.params.height);
     res.send(response);
   } catch (error) {
     res.status(404).json({

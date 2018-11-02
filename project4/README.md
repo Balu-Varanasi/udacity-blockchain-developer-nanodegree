@@ -204,10 +204,11 @@ $ curl "http://localhost:8000/block/1"
       "dec": "-26° 29' 24.9",
       "ra": "16h 29m 1.0s",
       "story": "466f756e642073746172207573696e672068747470733a2f2f7777772e676f6f676c652e636f6d2f736b792f",
+      "storyDecoded": "Found star using https://www.google.com/sky/"
     }
   },
-  "time":"1541160381",
-  "previousBlockHash":"9fd57f8eff4cd0520887b458330f4c2ef6e7f33864942d40fc1c76918e0f0b0f",
+  "time": "1541160381",
+  "previousBlockHash":"9fd57f8eff4cd0520887b458330f4c2ef6e7f33864942d40fc1c76918e0f0b0f"
 }
 ```
 
