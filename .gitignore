@@ -3,3 +3,4 @@ node_modules/
 .DS_Store
 chaindata/
 data/
+project5/smart_contracts/build/

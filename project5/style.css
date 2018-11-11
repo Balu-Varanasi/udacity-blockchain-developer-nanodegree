@@ -1,0 +1,36 @@
+body {
+    background-color: #F0F0F0;
+    padding: 2em;
+    font-family: 'Raleway', 'Source Sans Pro', 'Arial', serif;
+}
+
+.container {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.bold {
+    font-weight: bolder;
+}
+
+.row {
+    margin-bottom: 10px;
+}
+
+.w-1\/3 {
+    width: 33.3333%;
+}
+
+.w-1\/2 {
+    width: 50%;
+}
+
+.w-full {
+    width: 100%;
+}
+
+button {
+    margin: 2em 0;
+    padding: 1em 4em;
+    display: block;
+}
