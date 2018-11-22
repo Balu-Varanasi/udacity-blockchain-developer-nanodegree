@@ -7,8 +7,8 @@ Build additional functionality with your smart contract and deploy it on the pub
 https://review.udacity.com/#!/rubrics/2297/view
 
 ## console output
-
-➜  smart_contracts git:(master) ✗ truffle compile
+```bash
+➜  smart_contracts git:(master) truffle migrate --network rinkeby --reset --compile-all        
 Compiling ./contracts/Migrations.sol...
 Compiling ./contracts/StarNotary.sol...
 Compiling openzeppelin-solidity/contracts/introspection/ERC165.sol...
@@ -20,34 +20,36 @@ Compiling openzeppelin-solidity/contracts/token/ERC721/IERC721Receiver.sol...
 Compiling openzeppelin-solidity/contracts/utils/Address.sol...
 Writing artifacts to ./build/contracts
 
-➜  smart_contracts git:(master) ✗ truffle deploy --network rinkeby                                                      
 Using network 'rinkeby'.
 
 Running migration: 1_initial_migration.js
-  Deploying Migrations...
-  ... 0x1c80f385485a8539a491f162afbfee346b47010d277c61cc791f8ccb776a950b
-  Migrations: 0xf8b5d27c27a586de52a6688698ddbc7b1b27045e
+  Replacing Migrations...
+  ... 0x1a6ae78d7a10aabbf3bb6460495c4bbd025d8df45b1598df183ace2f3f2cef50
+  Migrations: 0xcd241edef5509c53a9fe1b2d3f33f6801d1725d8
 Saving successful migration to network...
-  ... 0x8af60333eeb20934b1253f9f02a5c8ede4c071b819be7f6a3692054041e0ce14
+  ... 0x316b376fae10650e832c1021cf8840a3513c256ae1845a2b47d4d61f7a8752e8
 Saving artifacts...
 Running migration: 2_deploy_star_notary.js
-  Deploying StarNotary...
-  ... 0x986934ddab3b6f698901f0640a071c97915f95b2b7ef4ff9389e3fe3529a01cc
-  StarNotary: 0x833b12a5e66af7c293bcab84c0bcce9b74fb0526
+  Replacing StarNotary...
+  ... 0xe8163b8e6941ba1c6743b1402dbdc1d24c28f90df2e565a0cac1fdeb3685d322
+  StarNotary: 0x31709061edbcf70936ad634cb7e4b58cc93fa4e9
 Saving successful migration to network...
-  ... 0x8c28c862fd918da02b9336ff051a6a807e374b5cbfe6284e960fc0d3062002cd
+  ... 0x935deee2eb8d86bc45b70639be58f51c27f7ac4c2a5516274e1ba9488ffc2d31
+Saving artifacts...
+```
 
 ## contract address
-0xaf409dcf81b728c42571567370ca39fc20096f94
-https://rinkeby.etherscan.io/address/0xaf409dcf81b728c42571567370ca39fc20096f94
+0x31709061edbcf70936ad634cb7e4b58cc93fa4e9
+https://rinkeby.etherscan.io/address/0x31709061edbcf70936ad634cb7e4b58cc93fa4e9
 
 ## contract hash
-0x986934ddab3b6f698901f0640a071c97915f95b2b7ef4ff9389e3fe3529a01cc
-https://rinkeby.etherscan.io/tx/0x986934ddab3b6f698901f0640a071c97915f95b2b7ef4ff9389e3fe3529a01cc
+0xe8163b8e6941ba1c6743b1402dbdc1d24c28f90df2e565a0cac1fdeb3685d322
+https://rinkeby.etherscan.io/tx/0xe8163b8e6941ba1c6743b1402dbdc1d24c28f90df2e565a0cac1fdeb3685d322
 
 ## transaction hash
-0x8c28c862fd918da02b9336ff051a6a807e374b5cbfe6284e960fc0d3062002cd
-https://rinkeby.etherscan.io/tx/0x8c28c862fd918da02b9336ff051a6a807e374b5cbfe6284e960fc0d3062002cd
+0x7cfb2df820d083409499e737d6251fb204d1f2947ec73ecd4bf7fcc081d00ab3
+https://rinkeby.etherscan.io/tx/0x7cfb2df820d083409499e737d6251fb204d1f2947ec73ecd4bf7fcc081d00ab3
+
 
 ## star tokenId
 1
