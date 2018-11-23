@@ -535,13 +535,13 @@
     ]
   );
   // Grab the contract at specified deployed address with the interface defined by the ABI
-  var starNotary = StarNotary.at('0x99ba178d93e1b1af5b7850c4ef8e64a25dc96a96');
+  var starNotary = StarNotary.at('0x31709061edbcf70936ad634cb7e4b58cc93fa4e9');
 
   // CRITERION: Deploy smart contract on a public test network / Execute createStar() function
   // CRITERION: Client code interacts with smart contract / Claim a new star. Each new star support these pieces of metadata:
   // Enable claim button being clicked
-  function claimButtonClicked () {
-    web3.eth.getAccounts(function(error, accounts) {
+  function claimButtonClicked() {
+    web3.eth.getAccounts(function (error, accounts) {
       if (error) {
         alert(error);
         return
@@ -559,13 +559,13 @@
 
       starNotary.createStar.sendTransaction(name, story, ra, dec, mag, {
         from: account
-      }, function(error, result) {
+      }, function (error, result) {
 
         if (!error) {
           alert(result);
 
           var starClaimedEvent = starNotary.Transfer();
-          starClaimedEvent.watch(function(error, result) {
+          starClaimedEvent.watch(function (error, result) {
             if (!error) {
               alert('transaction completed');
             } else {
@@ -582,8 +582,8 @@
 
   // CRITERION: Client code interacts with smart contract / Lookup a star by ID using tokenIdToStarInfo()
   // Enable info button being clicked
-  function infoButtonClicked () {
-    web3.eth.getAccounts(function(error) {
+  function infoButtonClicked() {
+    web3.eth.getAccounts(function (error) {
       if (error) {
         alert(error);
         return
@@ -592,7 +592,7 @@
       // get token id from input
       const tokenId = document.getElementById('star-token').value;
 
-      starNotary.tokenIdToStarInfo.call(tokenId, function(error, result) {
+      starNotary.tokenIdToStarInfo.call(tokenId, function (error, result) {
         if (!error) {
           alert(result);
           document.getElementById('star-token-result').innerHTML = result;
